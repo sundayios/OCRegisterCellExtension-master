@@ -22,7 +22,7 @@
     NSString *nibName = NSStringFromClass(cls);
     NSString *path = [[NSBundle mainBundle] pathForResource:nibName ofType:@"nib"];
     if (path) {
-        [self registerNib:[UINib nibWithNibName:@"" bundle:nil] forHeaderFooterViewReuseIdentifier:NSStringFromClass(cls)];
+        [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forHeaderFooterViewReuseIdentifier:NSStringFromClass(cls)];
     }else{
         [self registerClass:cls forHeaderFooterViewReuseIdentifier:NSStringFromClass(cls)];
     }
