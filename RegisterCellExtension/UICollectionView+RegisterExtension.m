@@ -40,4 +40,22 @@
     [self sq_registerforSupplementaryViewOfKindSectionHeader:cls];
     [self sq_registerforSupplementaryViewOfKindSectionFooter:cls];
 }
+
+
+- (id)sq_dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(nonnull NSIndexPath *)indexPath{
+    id cell = [self dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    return cell;
+}
+- (id)sq_dequeueReusableSupplementaryViewOfKindHeader:(nonnull NSString *)sectionKindHeader withReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath{
+    id header = [self dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:sectionKindHeader forIndexPath:indexPath];
+    return header;
+}
+- (id)sq_dequeueReusableSupplementaryViewOfKindFooter:(nonnull NSString *)sectionKindFooter withReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath{
+    id footer = [self dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:identifier forIndexPath:indexPath];
+    return footer;
+}
+- (id)sq_dequeueReusableSupplementaryViewOfKind:(nonnull NSString *)sectionKind withReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath{
+    id cell = [self dequeueReusableSupplementaryViewOfKind:sectionKind withReuseIdentifier:identifier forIndexPath:indexPath];
+    return cell;
+}
 @end

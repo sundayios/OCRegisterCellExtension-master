@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)sq_registerCellClass:(Class)cls;
 
 - (void)sq_registerHeaderFooterViewReuseClass:(Class)cls;
+
+//
+- (id)sq_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
+//
+- (id)sq_dequeueReusableHeaderFooterViewWithIdentifier:(NSString *)identifier;
 @end
 
 NS_ASSUME_NONNULL_END

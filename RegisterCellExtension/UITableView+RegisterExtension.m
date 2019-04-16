@@ -27,4 +27,16 @@
         [self registerClass:cls forHeaderFooterViewReuseIdentifier:NSStringFromClass(cls)];
     }
 }
+
+//cell
+- (id)sq_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath{
+    id cell = [self dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    return cell;
+}
+//viewForHeaderInSection
+- (id)sq_dequeueReusableHeaderFooterViewWithIdentifier:(NSString *)identifier{
+    id headerFooter = [self dequeueReusableHeaderFooterViewWithIdentifier:identifier];
+    return headerFooter;
+}
+
 @end

@@ -16,6 +16,11 @@
 		C3026B642266235600B79AFB /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B632266235600B79AFB /* UIView+Nib.m */; };
 		C3026B672266238900B79AFB /* UITableView+RegisterExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B662266238900B79AFB /* UITableView+RegisterExtension.m */; };
 		C3026B6A2266285700B79AFB /* UICollectionView+RegisterExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B692266285700B79AFB /* UICollectionView+RegisterExtension.m */; };
+		C3026B6D2266338700B79AFB /* SQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B6C2266338700B79AFB /* SQTableViewCell.m */; };
+		C3026B70226636BC00B79AFB /* TableViewHeaderFoonter.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B6F226636BC00B79AFB /* TableViewHeaderFoonter.m */; };
+		C3026B73226639BC00B79AFB /* SQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B72226639BC00B79AFB /* SQCollectionViewCell.m */; };
+		C3026B76226639F400B79AFB /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B75226639F400B79AFB /* HeaderCollectionReusableView.m */; };
+		C3026B7922663A0700B79AFB /* FooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3026B7822663A0700B79AFB /* FooterCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,16 @@
 		C3026B662266238900B79AFB /* UITableView+RegisterExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RegisterExtension.m"; sourceTree = "<group>"; };
 		C3026B682266285700B79AFB /* UICollectionView+RegisterExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RegisterExtension.h"; sourceTree = "<group>"; };
 		C3026B692266285700B79AFB /* UICollectionView+RegisterExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RegisterExtension.m"; sourceTree = "<group>"; };
+		C3026B6B2266338700B79AFB /* SQTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQTableViewCell.h; sourceTree = "<group>"; };
+		C3026B6C2266338700B79AFB /* SQTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQTableViewCell.m; sourceTree = "<group>"; };
+		C3026B6E226636BC00B79AFB /* TableViewHeaderFoonter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderFoonter.h; sourceTree = "<group>"; };
+		C3026B6F226636BC00B79AFB /* TableViewHeaderFoonter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderFoonter.m; sourceTree = "<group>"; };
+		C3026B71226639BC00B79AFB /* SQCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQCollectionViewCell.h; sourceTree = "<group>"; };
+		C3026B72226639BC00B79AFB /* SQCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQCollectionViewCell.m; sourceTree = "<group>"; };
+		C3026B74226639F400B79AFB /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		C3026B75226639F400B79AFB /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		C3026B7722663A0700B79AFB /* FooterCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooterCollectionReusableView.h; sourceTree = "<group>"; };
+		C3026B7822663A0700B79AFB /* FooterCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooterCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,16 @@
 				C3026B552266201E00B79AFB /* LaunchScreen.storyboard */,
 				C3026B582266201E00B79AFB /* Info.plist */,
 				C3026B592266201E00B79AFB /* main.m */,
+				C3026B6B2266338700B79AFB /* SQTableViewCell.h */,
+				C3026B6C2266338700B79AFB /* SQTableViewCell.m */,
+				C3026B6E226636BC00B79AFB /* TableViewHeaderFoonter.h */,
+				C3026B6F226636BC00B79AFB /* TableViewHeaderFoonter.m */,
+				C3026B71226639BC00B79AFB /* SQCollectionViewCell.h */,
+				C3026B72226639BC00B79AFB /* SQCollectionViewCell.m */,
+				C3026B74226639F400B79AFB /* HeaderCollectionReusableView.h */,
+				C3026B75226639F400B79AFB /* HeaderCollectionReusableView.m */,
+				C3026B7722663A0700B79AFB /* FooterCollectionReusableView.h */,
+				C3026B7822663A0700B79AFB /* FooterCollectionReusableView.m */,
 			);
 			path = OCRegisterCellExtension;
 			sourceTree = "<group>";
@@ -164,12 +189,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3026B76226639F400B79AFB /* HeaderCollectionReusableView.m in Sources */,
 				C3026B642266235600B79AFB /* UIView+Nib.m in Sources */,
 				C3026B6A2266285700B79AFB /* UICollectionView+RegisterExtension.m in Sources */,
+				C3026B7922663A0700B79AFB /* FooterCollectionReusableView.m in Sources */,
 				C3026B4F2266201D00B79AFB /* ViewController.m in Sources */,
 				C3026B5A2266201E00B79AFB /* main.m in Sources */,
+				C3026B70226636BC00B79AFB /* TableViewHeaderFoonter.m in Sources */,
 				C3026B672266238900B79AFB /* UITableView+RegisterExtension.m in Sources */,
 				C3026B4C2266201D00B79AFB /* AppDelegate.m in Sources */,
+				C3026B73226639BC00B79AFB /* SQCollectionViewCell.m in Sources */,
+				C3026B6D2266338700B79AFB /* SQTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
